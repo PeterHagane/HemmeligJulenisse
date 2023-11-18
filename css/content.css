@@ -1,0 +1,224 @@
+#contentcontainer{
+    max-width: 1024px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    /* justify-content: center;
+    align-content: center;
+    align-items: center; */
+}
+
+#splash{
+    height: 66vh;
+    padding-top:33vh;
+}
+
+#splash.short{
+    /* height: 33vh;
+    animation: normal;
+    animation: ease-out slideOut 1s; */
+}
+
+#splash.tall{
+    /* height: 55vh;
+    animation: ease-in slideIn 1s; */
+}
+
+#splash div,#splash img,#splash h1,#splash h2,#splash h3,#splash h4,#splash h5,#splash h6{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#splash h4, #splash h3,#splash h2{
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+}
+
+.splashmenu{
+    display: flex;
+    flex-direction: none;
+    padding: 0;
+}
+
+.splashmenu li{
+      height: 2.5em;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: center;
+      margin: 0.5em;
+      animation: ease-in fadeIn 0.5s;
+      user-select: none;
+      font-weight: 400;
+      font-size: 18px;
+  }
+
+#splashlogo{
+    /* width: 70%; */
+    max-height: 20vh;
+}
+
+
+#about{
+    /* margin-top: calc(45vh); */
+    margin-bottom: 200px;
+    display:flex;
+    justify-content: center;
+}
+
+#about p{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+#projects{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects h1,#projects h2,#projects h3,#projects h4,#projects h5,#projects h6{
+    /* margin-left: 0; */
+}
+#projects h1, #projects h2, #about h1, #about h2, #contact h1, #contact h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+#projects p{
+    /* white-space:nowrap; */
+    /* overflow:hidden;
+    text-overflow:ellipsis; */
+}
+
+#contact{
+
+}
+
+
+#splash, #about, #projects, #contact{
+    
+    max-width: 100%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+.graphic{
+    opacity: 0.3;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    shape-outside: polygon(0% 100%, 0% 100%, 0% 100%);
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.07);
+    height: auto;
+    padding: 1em 1em 1em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
+    min-height: 400px;
+    min-width:300px;
+    max-width: 300px; 
+}
+
+.card img{
+    object-fit: contain;
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.cardfill{
+    min-height: 400px;
+    min-width:250px;
+    max-width: 250px;
+    padding: 1em 1em 1em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+/* .card > *:nth-last-child(1){
+    justify-self: end;
+} */
+
+.repositoryimg{
+    height: auto;
+    max-height: auto !important;
+    margin: 3px 0px 3px 0px !important;
+}
+
+.repository{
+    max-width: 100px;
+    height: 50px;
+    max-height: 50px !important;
+    margin: 0px 0px 0px 0px !important;
+    
+}
+
+@media screen and (min-width: 40em) {
+    .card {
+        flex: 0 1 calc(50% - 2.5em);
+        
+    }
+    .cards{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: stretch;
+    }
+    
+}
+@media screen and (min-width: 60em) {
+    .card {
+        flex: 0 1 calc(25% - 2.5em);
+    }
+}
+
+.tag{
+    margin: 2px 4px 2px 0px;
+    padding: 3px 3px 4px 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--grey);
+    -webkit-text-fill-color: var(--grey);
+    font-weight: 400;
+}
+ 
+
+/* @media screen and (min-width: 52em) {
+    .centered {
+        
+    }
+} */
+/* 
+@keyframes slideIn {
+    from {
+    height: 0em;
+    }
+    to {
+    height: 137px;
+    }
+  }
+  @keyframes slideOut {
+    from {
+    height: 55vh;
+    }
+    to {
+    height: 33vh;
+    }
+  } */

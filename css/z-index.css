@@ -1,0 +1,31 @@
+.bg{
+    z-index:-1;
+}
+
+.bg2{
+    z-index:-1;
+}
+
+.bg3{
+    z-index:-1;
+}
+
+.bg4{
+    z-index:-1;
+}
+
+#loading{
+    z-index: 9;
+}
+
+.navbarcontainer{
+    z-index: 10;
+}
+
+.splashtitle{
+
+}
+
+.splashlogo{
+
+}

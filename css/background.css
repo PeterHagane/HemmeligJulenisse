@@ -1,0 +1,110 @@
+.parallax-container {
+  perspective: 2px;
+
+}
+
+.foreground {
+  /* Uncomment the code below to see the difference the scale property makes! */
+  /* transform: translateZ(3px); */
+  /* transform: translateZ(0) scale(1); */
+}
+
+/* #bgi1{
+  background-image: url("../img/background1.JPG");
+  background-size: 100% auto;
+  background-repeat: no-repeat; 
+  position: absolute;
+  height: auto;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.8;
+  z-index: -1; 
+  background: linear-gradient(90deg, rgb(35, 31, 104) 0%, rgb(47, 94, 102) 100%);
+} */
+
+/* diagonal lines */
+.bg {
+  animation: slide 66s linear infinite alternate;
+  background-image: linear-gradient(-60deg, rgba(0, 0, 0, 0.04) 55%, rgba(255, 0, 0, 0.04) 55%, rgba(255, 255, 255, 0.03) 55%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  margin-left: 10px;
+  transition: all 4s;
+}
+
+.bg2 {
+  animation: slide 33s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
+
+}
+
+.bg3 {
+  animation-duration: 66s;
+}
+
+.bg4 {
+  animation: slide 33s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* end diagonal lines */
+
+.hide {
+  
+  animation: ease-in fadeOut 2s;
+  animation-iteration-count: 1;
+  display: none;
+}
+
+.show {
+  
+  /* display: none; */
+  /* visibility: hidden; */
+  animation: ease-out fadeIn 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+/* particles */
+/* #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  z-index: 0;
+} */

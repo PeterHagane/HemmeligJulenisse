@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Peter Hagane | Design & Development</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
+</head>
+
+<body id="home"> 
+    <!-- <div id="particles-js" width="1312" height="430" style="width: 100%; height: 100%;"></div> -->
+    <div id="bg" class="show"></div>
+    <div id="loading" style="transition: all 0.3s linear;" onclick="this.style.opacity = '.0'">
+    <div class="loader"></div>
+    </div> <!-- ugly, but charming. Ctrl+f overlay in main.css, main.js-->
+    <div id="navbarcontainer"></div> <!-- navbar "template". See navbar.css, navbar.js-->
+    
+    <div id="scrollelement"></div>
+    
+    <!-- <div id="contentcontainer" class="flexColumn"> -->
+        <section id="splash"></section> <!-- splash "template". See setSplash in main.js, #splash in main.css -->
+        <section id="about"></section>
+        <section id="projects"></section>
+        <section id="contact" style="margin-bottom: 200px;"></section>
+    <!-- </div> -->
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js'></script> -->
+    <script src='js/navbar.js'></script>
+    <script src='js/background.js'></script>
+    <script src='js/splash.js'></script>
+    <script src='js/about.js'></script>
+    <script src='js/projects.js'></script>
+    <script src='js/contact.js'></script>
+    <script src='js/main.js'></script>
+    <!-- <script src='js/uikit.min.js'></script> -->
+    <script src='js/uikit-icons.min.js'></script>
+</body>
+
+</html>
+
+
+<!-- This landing page is written without JQuery, just for the sake of it. -->
+<!-- I don't think there's anything wrong with JQuery, but since you're reading this, you might disagree. -->
+<!-- <img height="300px" width="300px" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74393/world.topo.200407.3x21600x21600.D1.jpg"/>  test image for loading overlay-->
