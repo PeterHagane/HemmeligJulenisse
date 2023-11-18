@@ -65,7 +65,6 @@
 /* end diagonal lines */
 
 .hide {
-  
   animation: ease-in fadeOut 2s;
   animation-iteration-count: 1;
   display: none;
@@ -78,6 +77,7 @@
   animation: ease-out fadeIn 2s;
   animation-iteration-count: 1;
 }
+
 
 @keyframes fadeIn {
   

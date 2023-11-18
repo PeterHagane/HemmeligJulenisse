@@ -23,11 +23,11 @@ html, body {
     overflow-x: hidden;
 }
 
-* html,button,textarea,input{
+html,button,textarea,input{
     font-family: 'Montserrat regular';
 }
 *{
-    font-family: 'Montserrat', Fallback, sans-serif;
+    font-family: 'Montserrat', Fallback, sans-serif !important;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     hyphens: none;
@@ -108,6 +108,10 @@ p{
     color: var(--white);
 }
 
+p, div{
+    color: var(--white);
+}
+
 @media screen and (max-width: 640px) {
     h4{
         font-size: 24px;
@@ -149,9 +153,17 @@ p{
     }
 }
 
-.hidden{
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+/* Fade-Out Effect */
+.hidden {
+    visibility: hidden;
     opacity: 0;
-  }
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
 
 .text-gr{
     /* background: linear-gradient(to bottom, #eee, rgba(0, 0, 0, 0.2), #fffefd),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTMuNzUgJyBpZD0nZmVDb2xvck1hdHJpeDMxMTknIC8+CgkJCTxmZUNvbXBvc2l0ZSBpbjI9J3Jlc3VsdDUnIG9wZXJhdG9yPSdpbicgaW49J1NvdXJjZUdyYXBoaWMnIHJlc3VsdD0ncmVzdWx0NicgaWQ9J2ZlQ29tcG9zaXRlMzEyMScgLz4KCQkJPGZlTW9ycGhvbG9neSBpbj0ncmVzdWx0Nicgb3BlcmF0b3I9J2RpbGF0ZScgcmFkaXVzPScxMCcgcmVzdWx0PSdyZXN1bHQzJyBpZD0nZmVNb3JwaG9sb2d5MzEyMycgLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgZmlsbD0nI2VlZWVlZScvPiAgICAgCgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4PScwJyB5PScwJyBpZD0ncmVjdDI5ODUnIHN0eWxlPSdmaWxsOiNlMDg3Mjg7ZmlsdGVyOnVybCgjZmlsdGVyMzExNSknIC8+Cjwvc3ZnPg==); */
@@ -292,7 +304,7 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--mid-gradient);
+    background: var(--winter-gradient);
     display: flex;
     justify-content: center;
     align-content: center;

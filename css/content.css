@@ -10,8 +10,9 @@
 }
 
 #splash{
-    height: 66vh;
-    padding-top:33vh;
+    height: 100vh;
+    /* height: 66vh;
+    padding-top:33vh; */
 }
 
 #splash.short{
@@ -26,6 +27,11 @@
 }
 
 #splash div,#splash img,#splash h1,#splash h2,#splash h3,#splash h4,#splash h5,#splash h6{
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.marginAuto{
     margin-left: auto;
     margin-right: auto;
 }
