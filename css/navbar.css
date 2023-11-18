@@ -201,12 +201,12 @@
   height: 0em;
   }
   to {
-  height: 137px;
+  height: 72px;
   }
 }
 @keyframes slideOut {
   from {
-  height: 137px;
+  height: 72px;
   }
   to {
   height: 0;
