@@ -8,6 +8,7 @@
     --light-gradient: linear-gradient(90deg, rgb(123, 119, 180) 0%, rgb(121, 192, 186) 100%);
     --mid-gradient: linear-gradient(90deg, rgb(35, 31, 104) 0%, rgb(47, 94, 102) 100%);
     --dark-gradient: linear-gradient(90deg, rgb(10, 9, 46) 0%, rgb(22, 64, 71) 100%);
+    --winter-gradient: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 @media screen and (min-width: 768px) {
@@ -39,7 +40,7 @@ html, body {
 
 body{
     /* background: rgb(255,255,250); */
-    background: var(--mid-gradient);
+    background: var(--winter-gradient);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
