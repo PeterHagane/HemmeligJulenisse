@@ -1,14 +1,17 @@
+function getYear() {    
+    var d = new Date
+    return d.getFullYear() 
+}
+
 var splashHTML = `
 <div class="flexColumn"> 
-<img id="splashlogo" src="img/logo.svg">
+    <img/>
     <h4>
-    Design & Development
+    Hemmelig Julefisk ${getYear()}
     </h4>
     <div class="flexRow">
     <ul id="splashmenu" class="splashmenu">
     <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
     </ul>
     </div>
 </div> 
