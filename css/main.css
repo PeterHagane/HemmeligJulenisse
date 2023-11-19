@@ -223,21 +223,24 @@ button{
 }
 
 input {
-    background-repeat: no-repeat;
-    background-position: 0.6em center;
-    background-size: 1.2em;
-    padding: 0.5em;
-    background-color: #dddddd;
-    padding-left: 35px;
-    font-size: 100%;
-    border: none;
-    min-width: 21em;
-    border-radius: 4px 4px 4px 4px;
-    /* margin-top: 0.1em;
-    margin-bottom: 0.1em; */
-    margin: 0.1em;
+
 }
 
+input[type=button], input[type=submit], input[type=reset] {
+    padding: 0.5em;
+    outline: solid var(--grey) 1px;
+    border: none;
+    color: var(--white);
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.1s linear;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(255,255,255,0.3);
+}
 
 .flexCenter{
     justify-content: center;

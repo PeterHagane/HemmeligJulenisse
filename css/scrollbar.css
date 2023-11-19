@@ -1,5 +1,5 @@
 ::-webkit-scrollbar{
-    /* display: none; */
+    display: none;
     width: 14px;
     background:rgb(47, 94, 102);
 }

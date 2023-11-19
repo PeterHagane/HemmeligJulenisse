@@ -4,5 +4,6 @@ address,dl,fieldset,figure,ol,p,pre,ul {
 }
 
 h3{
+    
     color: var(--white);
 }

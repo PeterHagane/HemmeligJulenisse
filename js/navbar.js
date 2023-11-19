@@ -1,21 +1,21 @@
 var html = `
 <div class="navbarleft">
-  <a onclick=toggleBackgroundAnimation()>Toggle background</a>
-<div>
-    
-</div>
-<div class="flexfill">
-</div>
-<div class="menu-btn">
-    <div class="menu-btn__burger"></div>
-</div>
-</div>
+    <a onclick=toggleBackgroundAnimation()>❄️</a>
+      <div>
+
+      </div>
+      <div class="flexfill">
+      </div>
+      <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+      </div>
+      </div>
 
 
-<div class="navbarright">
-<ul class="menu">
-    <li><a href="#home">Home</a></li>
-</ul>
+      <div class="navbarright">
+      <ul class="menu">
+      <li><span class="uk-form-icon" uk-icon="icon: user"></span></li>
+  </ul>
 </div>
 `
 var navbarcontainer = document.getElementById("navbarcontainer");
@@ -82,7 +82,7 @@ const callback = function( entries, observer ) {
   let observedelement = entries[0];
 
   // Log observer entry data.
-  console.log(observedelement);
+  // console.log(observedelement);
 
   // Add or remove the blur.
   observedelement.isIntersecting ? unscrolled() : scrolled();

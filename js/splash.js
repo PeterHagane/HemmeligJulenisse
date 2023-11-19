@@ -11,7 +11,7 @@ var splashHTML = `
     </h2>
     <div class="flexRow">
     <ul id="splashmenu" class="splashmenu">
-    <li><a href="#about" onclick="renderSignUp()">Påmelding</a></li>
+    <li><a href="#about" onclick="renderStart()">Påmelding</a></li>
     </ul>
     </div>
 </div> 
@@ -20,12 +20,12 @@ var splashHTML = `
 
     // <img id="splashlogo" src="img/logo.svg">
 
-var setSplash = function setSplash(){
+var setSplash = function setSplash(html){
     var splash = document.getElementById("splash");
     splash.setAttribute("class", "flexColumn flexCenter visible");
-    splash.innerHTML = splashHTML;
+    splash.innerHTML = html;
 }
-setSplash();
+setSplash(splashHTML);
 
 async function derenderSplash(){
     
@@ -38,18 +38,37 @@ async function derenderSplash(){
     return true
 };
 
-splashHTML = "<div>asd</div>"
+async function renderStart() {
+    await derenderSplash().then(() => {
+        start = `
+        <div class="flexColumn splashIntro flexCenter">
+        <h3>Hvem er du?</h3>
+            <form>
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon">🐟</span>
+                        <input id="username" placeholder="Navn" class="uk-input" type="text" aria-label="Username">
+                    </div>
+                </div>
 
-async function renderSignUp(){
-    await derenderSplash().then(()=>{
-        splashHTML = `
-        <div class="flexColumn splashIntro flexCenter"> 
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon">🔒</span>
+                        <input id="password" placeholder="Passord" class="uk-input" type="text" aria-label="Password">
+                    </div>
+                </div>
+                <input type="submit" value="Logg inn" onclick="logIn()">
+
+                <input type="submit" value="Registrer" onclick="logIn()">
+            </form>
+            
+            
         <h3>Lag en ny event</h3>
             <form>
                 <div class="uk-margin">
                     <div class="uk-inline">
                         <span class="uk-form-icon" uk-icon="icon: user"></span>
-                        <input class="uk-input" type="text" aria-label="Not clickable icon">
+                        <input placeholder="" class="uk-input" type="text" aria-label="Not clickable icon">
                     </div>
                 </div>
                 
@@ -62,8 +81,13 @@ async function renderSignUp(){
             </form>
             </div>
         `
-        setSplash()
+        setSplash(start)
     })
+}
+
+function logIn(){
+    // console.log("asd")
+    saveUser()
 }
 
 //<h4>By</h4><h1>PETER HAGANE</h1></div><div class="flexRow">
