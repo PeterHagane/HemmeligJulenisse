@@ -14,6 +14,9 @@ var usersState = { data, error };
 
 
 async function saveUser(name, password){
+
+    Deno.serve((_req) => new Response("Hello, world"));
+
     fetch(supabase + '/', 
     {
         headers: {
